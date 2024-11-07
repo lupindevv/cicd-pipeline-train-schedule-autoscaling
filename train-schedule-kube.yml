@@ -1,3 +1,4 @@
+
 kind: Service
 apiVersion: v1
 metadata:
@@ -43,7 +44,7 @@ spec:
           periodSeconds: 10
         resources:
           requests:
-            cpu: 200m 
+            cpu: 200m
 
 ---
 
@@ -59,7 +60,7 @@ spec:
     name: train-schedule-deployment
   minReplicas: 1
   maxReplicas: 4
-  metrics: 
+  metrics:
   - type: Resource
     resource:
       name: cpu
